@@ -11,6 +11,15 @@ np.random.seed(seed)
 
 
 def model(train_x, train_y, test_x, test_y, epoch):
+    '''
+
+    :param train_x: train features
+    :param train_y: train labels
+    :param test_x:  test features
+    :param test_y: test labels
+    :param epoch: no. of epochs
+    :return: 
+    '''
     conv_model = Sequential()
     # first layer with input shape (img_rows, img_cols, 1) and 12 filters
     conv_model.add(Conv2D(12, kernel_size=(3, 3), activation='relu',
