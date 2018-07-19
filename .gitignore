@@ -1,0 +1,5 @@
+# pychache folder ignored
+__pycache__/*
+
+# .idea folder ignored
+.idea/*
