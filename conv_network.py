@@ -18,7 +18,7 @@ def model(train_x, train_y, test_x, test_y, epoch):
     :param test_x:  test features
     :param test_y: test labels
     :param epoch: no. of epochs
-    :return: 
+    :return:
     '''
     conv_model = Sequential()
     # first layer with input shape (img_rows, img_cols, 1) and 12 filters
