@@ -25,4 +25,7 @@ Run camera_pred.py (Use a green colored object to draw digit inside the red box)
 ```
 python camera_pred.py
 ```
+<img src= "https://github.com/aliakbar09a/mnist_digits_classification/blob/master/sample.gif">
+Press *c* to clear the box.
+
 
