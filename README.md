@@ -1,10 +1,17 @@
 # Digit Classification using Logistic Regression and CNN 
 This is a project focusing on the classification of digits from 0-9 using Logistic Regression and Convolutional Neural Network.
-The trained model is used to predict digits written on the captured frames from the webcam using object tracking.
+The trained model is used to predict digits drawn on the captured frames from the webcam using object tracking.
 
 ## Getting Started
+
+### Built with
+The Logistic Regression is implemented using numpy and softmax function is used for multiclass classification.
+The Convolutional Neural Network uses Keras API with tensorflow as backend.
+
 ### Prerequisites
-Install Conda for resolving all python related dependencies.
+Install Conda to resolve all requirements of python related dependencies.
+
+## Usage
 
 ### Training the models
 To Train the models on your own, delete the weights folder and run digit_recognizer.py
