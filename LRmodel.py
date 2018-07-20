@@ -94,7 +94,10 @@ def model(train_x, train_y, test_x, test_y, iters, alpha, print_cost=True):
     # calculating train and test accuracy
     train_accuracy = evaluate(train_x, train_y, weights, base)
     test_accuracy = evaluate(test_x, test_y, weights, base)
+    train_size = len(train_y)
     print(f'Logistic Regression Train accuracy : {train_accuracy}%')
     print(f'Logistic Regression Test accuracy : {test_accuracy}%')
-    print(f'Training size : {len(train_y)}, alpha : {alpha}, iterations : {iters}\n\n')
-    return weights, base
+    print(f'Training size : {train_size}, alpha : {alpha}, iterations : {iters}\n\n')
+    LR_params = {'weights': weights, 'base': base, 'train_accuracy': train_accuracy,
+                 'test_accuracy': test_accuracy, 'train_size': train_size, 'alpha': alpha, 'iters': iters}
+    return LR_params

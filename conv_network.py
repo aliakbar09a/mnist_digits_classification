@@ -39,14 +39,18 @@ def model(train_x, train_y, test_x, test_y, epoch):
     conv_model.compile(optimizer=keras.optimizers.Adadelta(),
                        loss='categorical_crossentropy',
                        metrics=['accuracy'])
-    print("\n Training the Convolution neural network on MNIST data\n")
+    print("\n Training the Convolution Neural Network on MNIST data\n")
     # fit the model
     conv_model.fit(train_x, train_y, batch_size=128, epochs=epoch,
                    validation_split=0.1, verbose=2)
     predicted_train_y = conv_model.predict(train_x)
-    print('Train accuracy : ', (sum(np.argmax(predicted_train_y, axis=1)
-                                    == np.argmax(train_y, axis=1))/(float(len(train_y)))))
+    train_accuracy = (sum(np.argmax(predicted_train_y, axis=1)
+                          == np.argmax(train_y, axis=1))/(float(len(train_y))))
+    print('Train accuracy : ', train_accuracy)
     predicted_test_y = conv_model.predict(test_x)
-    print('Test accuracy : ', (sum(np.argmax(predicted_test_y, axis=1)
-                                   == np.argmax(test_y, axis=1))/(float(len(test_y)))))
-    return conv_model, predicted_train_y, predicted_test_y
+    test_accuracy = (sum(np.argmax(predicted_test_y, axis=1)
+                         == np.argmax(test_y, axis=1))/(float(len(test_y))))
+    print('Test accuracy : ', test_accuracy)
+    CNN_accuracy = {'train_accuracy': train_accuracy,
+                    'test_accuracy': test_accuracy, 'epoch': epoch}
+    return conv_model, CNN_accuracy
