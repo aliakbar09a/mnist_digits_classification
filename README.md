@@ -10,6 +10,22 @@ The Convolutional Neural Network uses Keras API with tensorflow as backend.
 
 <img src= "https://github.com/aliakbar09a/mnist_digits_classification/blob/master/softmax.png">
 
+### Pretrained weights
+Training examples = 8000, Test examples = 1000
+
+**Logistic Regression**
+
+Train accuracy = 92.1%, 
+Test accuracy = 91.3%,
+learning rate = 0.1
+
+**CNN Model**
+
+Train accuracy = 98.1%,
+Test accuracy = 96.2%,
+no. of epochs = 8
+
+(Feel free to train the models on your own.)
 ### Prerequisites
 Install Conda to resolve all requirements of python related dependencies.
 
@@ -29,6 +45,6 @@ python camera_pred.py
 ```
 <img src= "https://github.com/aliakbar09a/mnist_digits_classification/blob/master/sample.gif">
 
-Press *c* to clear the box.
+Press **c** to clear the box.
 
 
