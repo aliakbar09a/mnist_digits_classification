@@ -8,6 +8,8 @@ The trained model is used to predict digits drawn on the captured frames from th
 The Logistic Regression is implemented using numpy and softmax function is used for multiclass classification.
 The Convolutional Neural Network uses Keras API with tensorflow as backend.
 
+<img src= "https://github.com/aliakbar09a/mnist_digits_classification/blob/master/softmax.png">
+
 ### Prerequisites
 Install Conda to resolve all requirements of python related dependencies.
 
