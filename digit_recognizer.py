@@ -28,6 +28,7 @@ if os.path.isdir('weights') == False:
 
 # list of filename of the weights and saved model
 weights_files = os.listdir('weights')
+weights_files = sorted(weights_files)
 # files that should be there to load the models
 correct_files = ['LR_params.npy', 'cnn_accuracy.npy', 'cnn_model.json', 'cnn_weights.h5']
 
