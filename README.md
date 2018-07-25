@@ -30,6 +30,11 @@ no. of epochs = 8
 Install Conda to resolve all requirements of python related dependencies.
 
 ## Usage
+### Files usage
+- LRmodel.py : Logistic Regression implemented using numpy
+- conv_network.py : CNN model implemented using Keras API
+- digit_recognizer.py : File to either train or load saved weights
+- camera_pred.py : Used to test the models using webcam
 
 ### Training the models
 To Train the models on your own, delete the weights folder and run digit_recognizer.py
